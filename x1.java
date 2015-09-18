@@ -22,14 +22,14 @@ void draw() {
   // Grass
   fill( 100,200,100 );
   rect( 0,horizon, width,height*3/4 );      // grass.
-  background(204); { //Mouse X Coordinate on screen
-  line(mouseX, 20, mouseX, 80); }
-  background(204); { //Mouse Y Coordinate on screen
-  line(20, mouseY, 80, mouseY); }
-}
-  text("mouseX", 50,50);// Mouse X coordinate
-  text("mouseY", 50,70);// Mouse Y coordinate
-  
+  //background(204); { //Mouse X Coordinate on screen
+  line(mouseX, 20, mouseX, 80); 
+  //background(204); { //Mouse Y Coordinate on screen
+  line(20, mouseY, 80, mouseY); 
+
+  text(mouseX, 50,50);// Mouse X coordinate
+  text(mouseY, 50,70);// Mouse Y coordinate
+
   /* INSERT YOUR CODE HERE! */
   fill(139,69,19);
   rect( 150,50,50,70 );  // tree
@@ -66,3 +66,4 @@ void keyPressed() {
     exit(); }             // press 'q' key to QUIT.
 }
 
+   
