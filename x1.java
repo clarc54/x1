@@ -25,6 +25,13 @@ void draw() {
   // Grass
   fill( 100,200,100 );
   rect( 0,horizon, width,height*3/4 );      // grass.
+  background(204); { //Mouse X Coordinate on screen
+  line(mouseX, 20, mouseX, 80); }
+  background(204); { //Mouse Y Coordinate on screen
+  line(20, mouseY, 80, mouseY); }
+}
+
+}
   
   /* INSERT YOUR CODE HERE! */
   fill(139,69,19);
@@ -61,6 +68,6 @@ void keyPressed() {
   if (key == 'q') {
     exit(); }             // press 'q' key to QUIT.
 }
-   
-   
 
+
+   
