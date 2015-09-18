@@ -23,9 +23,9 @@ void draw() {
   fill( 100,200,100 );
   rect( 0,horizon, width,height*3/4 );      // grass.
   //background(204); { //Mouse X Coordinate on screen
-  line(mouseX, 20, mouseX, 80); 
+  line(mouseX, 0, mouseX, 180); 
   //background(204); { //Mouse Y Coordinate on screen
-  line(20, mouseY, 80, mouseY); 
+  line(0,mouseY,180,mouseY); 
 
   text(mouseX, 50,50);// Mouse X coordinate
   text(mouseY, 50,70);// Mouse Y coordinate
@@ -65,5 +65,3 @@ void keyPressed() {
   if (key == 'q') {
     exit(); }             // press 'q' key to QUIT.
 }
-
-   
