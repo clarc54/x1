@@ -1,6 +1,3 @@
-//////// What am I trying to do???
-//////// What is my name?  (CST 112; today's date?)
-
 //// GLOBALS:  coordinates, speed, etc.
 float x, y;       // Position of creature.
 float dx, dy;     // Speed.
@@ -30,8 +27,8 @@ void draw() {
   background(204); { //Mouse Y Coordinate on screen
   line(20, mouseY, 80, mouseY); }
 }
-
-}
+  text("mouseX", 50,50)// Mouse X coordinate
+  text("mouseY", 50,70)// Mouse Y coordinate
   
   /* INSERT YOUR CODE HERE! */
   fill(139,69,19);
