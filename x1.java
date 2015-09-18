@@ -27,12 +27,13 @@ void draw() {
   rect( 0,horizon, width,height*3/4 );      // grass.
   
   /* INSERT YOUR CODE HERE! */
-  triangle( 150,horizon, 120,horizon-50, 180,horizon-50  );  // tree
-  text( "This is NOT a good tree; please fix it!", 150,horizon );
+  fill(139,69,19);
+  rect( 150,50,50,70 );  // tree
+  fill(0,100,0);
                                             // house
 
   fill(0);
-  text( "My name is Mud", 10,height-20 );                                          
+  text( "My name is Chris", 10,height-20 );                                          
                                             
   //// ACTION:  move (x,y) coordinates.
   x=  x + dx;
@@ -42,7 +43,7 @@ void draw() {
 
   /* INSERT YOUR CODE HERE! */
   fill(255,0,0); rect( x,y, 30,50 );        /* REPLACE THIS WITH YOUR OWN CODE! */
-  text( "Fred", x,y );
+  text( "Pal", x,y );
 
 }
 
@@ -58,8 +59,7 @@ void mousePressed() {
 
 void keyPressed() {
   if (key == 'q') {
-    exit();                           // press 'q' key to QUIT.
-  }
+    exit(); }             // press 'q' key to QUIT.
 }
    
    
