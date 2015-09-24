@@ -22,19 +22,29 @@ void draw() {
   // Grass
   fill( 100,200,100 );
   rect( 0,horizon, width,height*3/4 );      // grass.
-  //background(204); { //Mouse X Coordinate on screen
-  line(mouseX, 0, mouseX, 180); 
-  //background(204); { //Mouse Y Coordinate on screen
-  line(0,mouseY,180,mouseY); 
+  //Mouse X Coordinate on screen
+  line(mouseX, 0, mouseX, 480); 
+  //Mouse Y Coordinate on screen
+  line(0,mouseY,640,mouseY); 
 
   text(mouseX, 50,50);// Mouse X coordinate
   text(mouseY, 50,70);// Mouse Y coordinate
 
   /* INSERT YOUR CODE HERE! */
+  //Tree
   fill(139,69,19);
-  rect( 150,50,50,70 );  // tree
+  rect( 150,50,50,70 );
   fill(0,100,0);
-                                            // house
+  triangle(135,50, 175,0, 215,50);
+  // House
+  fill(255,228,196);
+  rect(300,60, 85,60);
+  fill(75,75,75);
+  triangle(300,60, 340,20, 385,60);
+  fill(88,58,12);
+  rect(310,80, 20,40);
+  fill(255);
+  rect(350,86, 25,25);
 
   fill(0);
   text( "My name is Chris", 10,height-20 );                                          
