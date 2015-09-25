@@ -3,7 +3,7 @@
 
 //////// Please change these to your name and today's date.
 String author=  "Christopher Clark";
-String title=  " x2 ";
+//String title=  " x2 ";
 String help=  " Click to relocate hero \n 'q' to quit; 'r' to reset. ";
 
 
@@ -62,7 +62,7 @@ void scene() {
 }
 
 void messages() {
-  text( title, width/3, 20 );
+  //text( title, width/3, 20 );
   text( help, width*2/3, 30 );
   text( author, 10,height-20 );
 }
